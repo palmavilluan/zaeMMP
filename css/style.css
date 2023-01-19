@@ -1,0 +1,481 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: auto;
+    background-color: #12333d;
+
+}
+
+.logo{
+    text-align: center;
+}
+.logo a{
+    text-align:center;
+    position: absolute;
+    color: #12333D;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+#nachricht {
+    font-family: 'Courier New', Courier, monospace;
+    color:#0cefc1;
+    font-style: bold;
+}
+.topheader{
+    background-color: #0cefc1;
+    padding-bottom: 10vh;
+}
+body {
+    padding: 0%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+#zaeMMP{
+    margin: 0;
+    padding-top: 30vh;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5em;
+    color:  #12333d;
+
+}
+#subtitle{
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    color:  #12333d;
+
+}
+
+.topheader button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif, arial;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 24px;
+    background: none;
+    color: #12333d;
+    border: 2px solid #12333d;
+    cursor: pointer;
+  }
+  .topheader button:active,  #tabelle button:focus{
+    outline: none;
+  }
+  .topheader button:hover{
+    color: #0cefc1;
+    box-shadow: 0px 4px 8px 1px #000;
+    transition: all .3s ease;
+  }
+  .topheader button::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background: #12333d;
+    transform-origin: left bottom;
+    transition-property: width height;
+    transition-duration: 0.3s;
+    z-index: -1;
+  }
+  .topheader button:hover::after{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  #tabelle button{
+
+    font-family: sans-serif, arial;
+    font-weight: bold;
+    font-size: 18px;
+    background: none;
+    color: #0cefc1;
+    cursor: pointer;
+  }
+
+
+
+p {
+    font-size: 15px;
+    color: #4c86af;
+}
+
+.title{
+
+    text-align: center;
+}
+
+table#tabelle {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #12333D;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table#tabelle td, table.tabelle th {
+    padding: 7px 10px;
+  }
+  table#tabelle tbody td {
+    font-size: 13px;
+    font-weight:100;
+    color: #0cefc1;;
+  }
+  table#tabelle tr:nth-child(even) {
+    background: #173F4C;
+  }
+  table#tabelle thead {
+    color: #0cefc1;
+    font-weight: bold;
+  }
+  table#tabelle thead th {
+    font-size: 16px;
+    font-weight: bold;
+    color: #12333D;
+    text-align: center;
+  }
+
+
+
+a {
+
+    color: rgb(5, 72, 100);
+}
+
+input {
+    margin: 10px;
+}
+
+textarea {
+    margin: 10px;
+    width: 50%;
+}
+
+button {
+
+    margin: 10px;
+
+}
+
+.dropdown{
+
+    margin: 10px;  
+}
+
+.wg {
+
+    border: 2px solid rgb(110, 168, 192);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.wg-image {
+
+    width: 50%;
+}
+
+#liste-wg {
+
+    width: 50%;
+    margin: auto;
+
+}
+
+nav {
+    text-align: right;
+}
+
+button {
+    background-color: #4c86af;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+h2 {
+    font-family:'Courier New', Courier, monospace;
+    color: #0cefc1;
+    text-align: left;
+}
+
+
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;;
+}
+#infoTex {
+    text-align: center;
+}
+#tabelleBereich{
+    width: 75%;
+}
+
+#infoText p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    color:#12333D;
+    background-color: #0cefc1;
+    padding: 20px;
+    position: fixed;
+    width: 25%;
+}
+/*  Login*/
+.titletext{
+    margin: 0;
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5em;
+    color:  #12333d;
+    background-color: #0cefc1;
+
+}
+input#passwort input#email{
+    font-size: 1.5rem;
+    color: #0cefc1;
+    background-color:#0f2931;
+    border-color:#12333D;
+}
+
+.einloggen{
+    text-align: center;
+    color: #0cefc1;
+    text-align: center;
+}
+.einloggen input:focus{
+    background-color: #061417;
+    color: #0cefc1;
+}
+
+
+
+.einloggen input{
+    background:#0b2228;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#0b2228;
+    height: auto;
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s;
+    color: #0cefc1;
+
+}
+
+.einloggen button{
+    
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 24px;
+    background: none;
+    color: #0cefc1;
+    border: 2px solid #0cefc1;
+    cursor: pointer;
+}
+
+.einloggen button:active,  .einloggenbutton:focus{
+    outline: none;
+  }
+  .einloggen button:hover{
+    color: #12333D;
+    background-color: #0cefc1;
+    box-shadow: 0px 4px 8px 1px #000;
+    transition: all .3s ease;
+  }
+
+
+.einloggen label{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.einloggen h2{
+    width: 30%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/*  Upload */
+
+header.flex {
+}
+
+header.flex button{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #12333D;
+    color: #0cefc1;
+    border: 2px solid #0cefc1;
+    cursor: pointer;
+}
+
+header.flex:active,  header.flex button:focus{
+    outline: none;
+  }
+  header.flex button:hover{
+    color: #12333D;
+    background-color: #0cefc1;
+    box-shadow: 0px 4px 8px 1px #000;
+    transition: all .3s ease;
+  }
+
+.flex {
+position:absolute;
+padding: 20px;
+}
+
+.container-header h1{
+    color: #12333D;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+}
+
+#Upload{
+    background-color: #0cefc1;
+    margin: 0;
+    padding-top: 30vh;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10em;
+    display: block;
+    
+    color:  #12333d;
+}
+#Upload h1{
+    padding-bottom: 5vh;
+}
+
+
+
+.container-header {
+    
+    width: 33%;
+
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+
+.standortform{
+
+}
+.standortform label{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #12333D;
+    color: #0cefc1;
+    
+}
+.standortform select{
+    background-color :#12333D;
+    border-style: solid;
+    border-color: #0cefc1;
+    padding: 10px;
+    color: #0cefc1;
+}
+#zusammenfassung{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    color: #0cefc1;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.standortform button{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 24px;
+    background: none;
+    color: #0cefc1;
+    border: 2px solid #0cefc1;
+    cursor: pointer;
+}
+
+.standortform button:active,  .standortform button:focus{
+    outline: none;
+  }
+.standortform button:hover{
+    color: #12333D;
+    background-color: #0cefc1;
+    box-shadow: 0px 4px 8px 1px #000;
+    transition: all .3s ease;
+  }
+
+/*
+Profil
+*/
+
+#meinprofil button{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 24px;
+    background: none;
+    color: #0cefc1;
+    border: 2px solid #0cefc1;
+    cursor: pointer;
+}
+
+#meinprofil button:active,  .standortform button:focus{
+    outline: none;
+  }
+#meinprofil button:hover{
+    color: #12333D;
+    background-color: #0cefc1;
+    box-shadow: 0px 4px 8px 1px #12333D;
+    transition: all .3s ease;
+  }
+
+#meinprofil input{
+    background-color: #0d282f;
+    border-color: #12333D;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-width: 1px;
+    color: #0cefc1;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#meinprofil label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    color: #0cefc1;
+    text-align: left;
+}

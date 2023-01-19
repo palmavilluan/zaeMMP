@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="logo">
+        <a href="https://450731-3.web.fhgr.ch">ZAEMMP</a>
+    </div>
+    <div class="einloggen">
+        <h1 class="titletext">Registrierung</h1>
+        <h2>willkommen bei ZAEMMP Registriere dich hier!</h2>
+
+        <label for="">Benutzername</label><br>
+        <input type="text" id="benutzername"><br>
+
+        <label for="">Handy Nummer</label><br>
+        <input type="tel" id="handyNr"><br><br>
+
+
+        <label for="">E-Mail Adresse</label><br>
+        <input type="email" id="email" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"><br>
+
+        <label for="">Passwort</label><br>
+        <input type="password" id="passwort"><br><br>
+
+        <button href="/login.html" onclick="registrieren()">registrieren</button>
+        <p id="nachricht"> </p>
+    
+        <button onclick="window.location.href='https://450731-3.web.fhgr.ch/login.html';">anmelden
+        </button>
+    </div>
+    <script src="js/registrieren.js"></script>
+
+</body>
+</html>
+

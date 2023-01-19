@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+   <!-- <h1>Profil</h1>
+    <h2>Dein Name: <span id="name"></span></h2>
+    <h2>Deine Handynummer: <span id="handyNr"></span></h2>
+    <h2>Deine E-Mail Adresse: <span id="email"></span></h2>
+
+    <button onclick="window.location.href='https://w3docs.com';">Meine Daten ändern</button>-->
+    <div class="logo">
+        <a href="https://450731-3.web.fhgr.ch">ZAEMMP</a>
+    </div>
+    <header class="flex">
+
+        <div class="container-header">
+
+            <h2>Profil</h2>
+
+        </div>
+
+        <div class="container-header">
+
+
+        </div>
+
+        <nav class="container-header">
+
+
+            <button id="logout" onclick="logout()"> Logout </button>
+
+        </nav>
+
+    </header>
+
+    <p id="infoText"> </p>
+
+
+    <div id="meinprofil">
+
+        <label for="name">Name</label> <br>
+        <input id="name" type="text" value=""> <br>
+
+        <label for="email">E-Mail</label> <br>
+        <input id="email" type="email" value=""> <br>
+
+        <label for="handyNr">Handynummer</label> <br>
+        <input id="handyNr" type="tel" value=""> <br>
+
+        
+
+        <button id="aktualisierenProfil" onclick="aktualisiereProfil()"> Profil aktualisieren </button>
+        <button id="loescheProfil" onclick="loescheProfil()"> Profil löschen </button>
+    </div>
+
+
+
+<!--
+<a href="">
+        <button class="hidden" id="button-neue" onclick="neueWG()">Veröffentlichen</button>
+        <button class="hidden" id="button-aktualisieren" onclick="aktualisiereWG()">Aktualisieren</button>
+        <button class="hidden" id="button-loeschen" onclick="loescheWG()">Löschen</button>
+    </a>
+    -->
+
+        <p id="nachricht"> </p>
+
+    
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/profil.js"></script>
+
+</body>

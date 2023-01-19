@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zaeMMP</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/upload.css"> 
+
+</head>
+<body>
+
+    <header class="flex">
+
+        <div class="container-header">
+            <h1>Hallo <span id="benutzername"></span></h1>
+
+        </div>
+
+        <div class="container-header">
+
+
+        </div>
+
+        <nav class="container-header">
+
+
+            <button id="logout" onclick="logout()"> Logout </button>
+            <button onclick="window.location.href='https://450731-3.web.fhgr.ch/profil.html';">Profil
+            </button>
+
+        </nav>
+
+    </header>
+
+    <h1>Upload</h1>
+
+
+    <label for="meinDok">Zusammenfassung</label> <br>
+    
+    <div class="ablageBereich">
+		<span class="ablageBereich_info"> reinziehen oder klicken um auszuwählen </span>
+        
+		<input type="file" name="meinDok" id="ablageBereich_input"><br>
+        
+	</div>
+
+
+    <div name="kursBereich" >
+
+        <label for="kurs">Kurs</label>
+        <select name="kurs" id="kurs_input">
+            <option value="IM">IM</option>
+        </select>
+
+
+    </div>
+
+    <div name="standortBereich" >
+<!-- 
+        <label for="standort">Standort</label> <br>
+        <input name="standort" id="standort_input" list="standort_list" > <br>
+        
+        <datalist id="standort_list">
+            <option value="Bern"></option>
+            <option value="New York"></option>
+    
+    
+        </datalist> -->
+        <label for="standort">Studienort</label>
+        <select name="standort" id="standort_input">
+            <option value="Bern">Bern</option>
+            <option value="Zuerich">Zuerich</option>
+            <option value="Chur">Chur</option>
+        </select>
+
+    </div>
+
+
+
+
+    <button onclick="dokumentHochladen()" > Hochladen </button>
+
+    <p id="nachricht" ></p>
+
+
+        
+
+       
+
+        
+        
+
+
+       
+    
+    <script src="js/upload.js"></script>
+
+</body>
+</html>
